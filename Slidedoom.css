@@ -1,20 +1,90 @@
-.slidezimple{background:green;width:100%;position:relative;-o-transform:translate(0%);-ms-transform:translate(0%);-moz-transform:translate(0%);-webkit-transform:translate(0%);-o-transition-duration:0s;-ms-transition-duration:0s;-moz-transition-duration:0s;-webkit-transition-duration:0s;-o-transition-timing-function:linear;-ms-transition-timing-function:linear;-moz-transition-timing-function:linear;-webkit-transition-timing-function:linear;transform:translate(0%);transition-duration:0s;transition-timing-function:linear;}body{margin:0px;}.slides{position:absolute;text-align:center;width:100%;color:white;font-size:30px;background:#666333;}.slidecontainer{overflow:hidden;width:100%;position:relative;float:left;margin-left:-0.3px;}.rightarrow{ position:absolute;right:10px;font-weight:bold;font-size:20px;z-index:1000;top:45%;color:white;opacity:0.4;transform:scale(1.5,8);}.leftarrow{ position:absolute;left:10px;font-weight:bold;font-size:20px;z-index:1000;top:45%;color:white;opacity:0.4;transform:scale(1.5,8);}.leftarrow:hover,.rightarrow:hover{color:white;opacity:1;cursor:pointer;}
-.glassy
-{
-background:black;
-height:100%;
-width:100%;
-left:0px;
-top:0px;
-z-index:1002;
-opacity:0.4;
+.slidezimple {
+    background: green;
+    width: 100%;
+    position: relative;
+    -o-transform: translate(0%);
+    -ms-transform: translate(0%);
+    -moz-transform: translate(0%);
+    -webkit-transform: translate(0%);
+    -o-transition-duration: 0s;
+    -ms-transition-duration: 0s;
+    -moz-transition-duration: 0s;
+    -webkit-transition-duration: 0s;
+    -o-transition-timing-function: linear;
+    -ms-transition-timing-function: linear;
+    -moz-transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+    transform: translate(0%);
+    transition-duration: 0s;
+    transition-timing-function: linear;
 }
-.afterglassy
-{
-z-index:1003;
-top:0px;
-left:0px;
-bottom:0px;
-right:0px;
-position:absolute;
+
+body {
+    margin: 0px;
+}
+
+.slides {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    color: white;
+    font-size: 30px;
+    background: #666333;
+}
+
+.slidecontainer {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+    float: left;
+    margin-left: -0.3px;
+}
+
+.rightarrow {
+    position: absolute;
+    right: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1000;
+    top: 45%;
+    color: white;
+    opacity: 0.4;
+    transform: scale(1.5, 8);
+}
+
+.leftarrow {
+    position: absolute;
+    left: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    z-index: 1000;
+    top: 45%;
+    color: white;
+    opacity: 0.4;
+    transform: scale(1.5, 8);
+}
+
+.leftarrow:hover, .rightarrow:hover {
+    color: white;
+    opacity: 1;
+    cursor: pointer;
+}
+
+.glassy {
+    background: black;
+    height: 100%;
+    width: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: 1002;
+    opacity: 0.4;
+}
+
+.afterglassy {
+    z-index: 1003;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    position: absolute;
 }
