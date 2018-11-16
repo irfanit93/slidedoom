@@ -1,4 +1,4 @@
 # slidedoom
 A responsive slide library for webpages
-Docs are coming soon.
-Visit http://asyncloading.com for the implementation
+Dont forget to add Slidedoom.css. It is needed inorder to display the slides correctly. 
+Visit https://irfanit93.github.io for the implementation
