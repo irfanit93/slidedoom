@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script>
+        // Assumed you have created Totally 18 Slides in the single webpage, 
+        //mention in the backgrounds array what each and every slide background should be.
+        // The Order of the background color is respected.
+        // If you want to specify background image instead of background color, specify it as
+        // object with property name set to the image name along with the extenstion.
+        var backgrounds = [
+            "rgba(0,0,0,0.8)",//Slide0 background
+            "#687792",//Slide1 background
+            "#121212",//Slide2 background
+            "#888eee",//Slide3 background
+            "#a77756",//Slide4 background
+            "#444777"//Slide5 background
+        ],
+            // Concept: 
+            // 1. A single container mentioned by div with css class 'slidecontainer'. There may be many slidecontainers in a single page, each having different number of slides.
+            // 2. Then inside of that div with 'slidecontainer' css class, place another div with css class as 'slidezimple'
+            // 3.Inside the div with css class 'slidezimple', we are going to create few slides.
+            // 4. Create a div with css classes 'slides slide0' inside the 'slidezimple' div.This completes our first slide.
+            // 5. Create a div with css classes 'slides slide1' inside the same 'slidezimple' div.This completes our second slide.
+            // 6. You can add as many slides you can by repeating the step4 or step5 again.
+            // The basic structure looks like this:
+            /*
+            <div class='slidecontainer'> ---- Step1
+        
+                <div class="slidezimple"> ---- Step2
+        
+                        <div class="slides slide0"> ----Step4
+        
+                        <div>
+        
+                        <div class="slides slide1"> ----Step5
+        
+                        <div>
+        
+                </div>
+        
+            </div>
+                    //Another slidecontainer with few slides in it
+        
+            <div class='slidecontainer'> ---- Step1
+        
+                <div class="slidezimple"> ---- Step2
+        
+                        <div class="slides slide0"> ----Step4
+        
+                        <div>
+        
+                        <div class="slides slide1"> ----Step5
+        
+                        <div>
+        
+                </div>
+        
+            </div>
+            */
+
+            //array of slidecontainer Height in proportion to Browser Client Height
+            // first slidecontainer height is 1/2 =50%  of Browser Client Height
+            // second slidecontainer height is 1/2 =50%  of Browser Client Height
+            // third slidecontainer height is 1/2 =50%  of Browser Client Height
+            // fourth slidecontainer height is 1/2 =50%  of Browser Client Height
+            // fifth slidecontainer height is 1/2 =50%  of Browser Client Height
+            aspectRatioHeight = [1],
+            //array of slidecontainer width in proportion to Browser Client Width
+            // first slidecontainer width is 1/1= 100%  of Browser Client Width
+            // second slidecontainer width is 1/2= 50%  of Browser Client Width
+            // third slidecontainer width is 1/2= 50%  of Browser Client Width
+            // fourth slidecontainer width is 1/1= 100%  of Browser Client Width
+            // fifth slidecontainer width is 1/1= 100%  of Browser Client Width
+            aspectRatioWidth = [1],
+
+            //Till now we have specified what each slidecontainer width and height
+
+            //Now we are going to  merge the slidecontainers and put it row wise
+            // First row contains only 1 slidecontainer
+            // Second row contains two slidecontainer
+            // Third row contains 1 slidecontainer
+            //Fourth row contains 1 slidecontainer
+            slidesgroup = [1],
+
+            //used only for css
+            //specify the maximum number of slides you are going to use in a single slidecontainer.
+            maxSlides = 18;
+
+    </script>
+    <style>
+        .aboutslidedoom {
+            text-align: center;
+            padding: 3%;
+            font-size: 80%;
+        }
+    </style>
+    <link href="Slidedoom.min.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="slidecontainer">
+        <div class="slidezimple">
+            <div class="slides slide0">
+                <h3>Slide0</h3>
+                <div class="aboutslidedoom">Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel
+                    library.Slidedoom is a lightweight and ease of use carousel library.
+                </div>
+            </div>
+            <div class="slides slide1">
+                <h3>Slide1</h3>
+                <div class="aboutslidedoom">Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel
+                    library.Slidedoom is a lightweight and ease of use carousel library.
+                </div>
+            </div>
+            <div class="slides slide2">
+                <h3>Slide2</h3>
+                <div class="aboutslidedoom">Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel
+                    library.Slidedoom is a lightweight and ease of use carousel library.
+                </div>
+            </div>
+            <div class="slides slide3">
+                <h3>Slide3</h3>
+                <div class="aboutslidedoom">Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel
+                    library.Slidedoom is a lightweight and ease of use carousel library.
+                </div>
+            </div>
+            <div class="slides slide4">
+                <h3>Slide4</h3>
+                <div class="aboutslidedoom">Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel
+                    library.Slidedoom is a lightweight and ease of use carousel library.
+                </div>
+            </div>
+            <div class="slides slide5">
+                <h3>Slide5</h3>
+                <div class="aboutslidedoom">Slidedoom is a lightweight and ease of use carousel library.Slidedoom is a lightweight and ease of use carousel
+                    library.Slidedoom is a lightweight and ease of use carousel library.
+                </div>
+            </div>
+            </div>
+    </div>
+    <script src="Slidedoom.min.js"></script>
+</body>
+
+</html>
