@@ -119,7 +119,8 @@ maxSlides = 6;
 ngOnInit() {
     
 //call slidedoom method as imported at the top  with the following arguments
-slidedoom(this.backgrounds, this.aspectRatioHeight, this.aspectRatioWidth, this.slidesgroup, this.maxSlides);
+
+slidedoom(this.backgrounds,this.aspectRatioHeight,this.aspectRatioWidth, this.slidesgroup, this.maxSlides);
 
 
 
