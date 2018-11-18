@@ -2,6 +2,15 @@
 A responsive slide library for webpages
 Dont forget to add Slidedoom.css. It is needed inorder to display the slides correctly. 
 Visit https://irfanit93.github.io for the implementation
+Visit https://www.npmjs.com/package/slidedoom for the package details
+
+Installation:
+
+npm i slidedoom --save
+
+Use Slidedoom.min.js for regular websites.
+
+Use Slidedoom.ang.min.js for Angular2+ .
 
 Features:
 1. Its Small. 4kb Javascript and 2Kb CSS.
